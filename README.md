@@ -1,2 +1,2 @@
-# WSButton
-Encapsulated UIButton with Block
+# WSControl
+Encapsulated UIButton/UIAlertView/UIActionSheet with Block
