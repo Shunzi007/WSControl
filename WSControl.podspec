@@ -10,23 +10,10 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/Shunzi007/WSControl.git', :tag => s.version}
   s.requires_arc = true
 
-  s.platform = :ios, '7.0'
-  s.ios.deployment_target = '7.0'
+  s.platform = :ios, '5.0'
 
-  s.public_header_files = 'WSControl/*.h'
-  s.source_files = 'WSControl/WSControl.h'
-  s.frameworks = 'Foundation', 'UIKit'
-
-  s.subspec 'WSButton' do |ss|
-    ss.source_files = 'WSControl/WSButton.{h,m}'
-  end
-
-  s.subspec 'WSAlertView' do |ss|
-    ss.source_files = 'WSControl/WSAlertView.{h,m}'
-  end
-
-  s.subspec 'WSActionSheet' do |ss|
-    ss.source_files = 'WSControl/WSActionSheet.{h,m}'
-  end
+  s.public_header_files = 'WSControl/WSControl.h'
+  s.source_files = 'WSControl/*.{h,m}'
+  s.frameworks = 'UIKit'
 
 end
