@@ -28,10 +28,14 @@
                                                         firstButtonTittle:@"1"
                                                        secondButtonTittle:@"2"
                                                         thirdButtonTittle:@"3"];
+        
         actionSheet.actionBlock = ^(NSInteger buttonIndex) {
-            self.label.text = [NSString stringWithFormat:@"You has Choosed button %ld", buttonIndex];
+            self.label.text = [NSString stringWithFormat:@"You has choosed button %ld", buttonIndex];
             NSString *identifier = [NSString stringWithFormat:@"show_%ld", buttonIndex];
-            [self performSegueWithIdentifier:identifier sender:[NSString stringWithFormat:@"%ld", buttonIndex]];
+            if (buttonIndex <= 3) {
+                [self performSegueWithIdentifier:identifier sender:[NSString stringWithFormat:@"%ld", buttonIndex]];
+
+            }
         };
         [actionSheet showInView:self.view];
     };
