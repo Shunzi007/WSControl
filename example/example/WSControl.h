@@ -12,5 +12,6 @@
 #import "WSButton.h"
 #import "WSAlertView.h"
 #import "WSActionSheet.h"
+#import "WSSegmentedControl.h"
 
 #endif
