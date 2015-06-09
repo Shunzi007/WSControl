@@ -7,8 +7,8 @@
 //
 
 #import "WSButton.h"
-
 @implementation WSButton
+
 - (instancetype)init
 {
     self = [super init];
@@ -17,6 +17,23 @@
     }
     return self;
 }
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
++ (id)buttonWithType:(UIButtonType)buttonType {
+    WSButton *button = [super buttonWithType:buttonType];
+    if (button) {
+        [button addTarget:button action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return button;
+}
+
 
 - (void)awakeFromNib
 {
@@ -27,9 +44,9 @@
     [self addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)action:(id)sender {
-    if (self.actionBlock) {
-        self.actionBlock();
+- (void)action:(WSButton *)sender {
+    if (sender.action) {
+        sender.action();
     }
 }
 

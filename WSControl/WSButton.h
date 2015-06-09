@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface WSButton : UIButton
-@property (nonatomic, copy) dispatch_block_t actionBlock;
+
+@property (nonatomic, copy) void (^action)(void);
+
 @end
