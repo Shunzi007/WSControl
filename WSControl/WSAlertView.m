@@ -9,6 +9,7 @@
 #import "WSAlertView.h"
 
 @implementation WSAlertView
+
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle firstButtonTittle:(NSString *)firstButtonTittle secondButtonTittle:(NSString *)secondButtonTittle thirdButtonTittle:(NSString *)thirdButtonTittle {
     self = [super initWithTitle:title
                         message:message

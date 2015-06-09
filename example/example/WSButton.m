@@ -9,6 +9,7 @@
 #import "WSButton.h"
 
 @implementation WSButton
+
 - (instancetype)init
 {
     self = [super init];
