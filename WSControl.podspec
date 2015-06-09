@@ -89,10 +89,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WSControl", "WSControl/*.{h,m}"
+  s.source_files  = "WSControl/*.{h,m}"
   #s.exclude_files = "WSControl/*.{h,m}"
 
-  s.public_header_files = "WSControl/WSControl.h"
+  #s.public_header_files = "WSControl/WSControl.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "UIKit/UIKit.h"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
