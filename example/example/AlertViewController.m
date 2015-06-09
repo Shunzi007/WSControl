@@ -20,18 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.button.actionBlock = ^() {
+    [self.button setAction:^{
         WSAlertView *alert = [[WSAlertView alloc] initWithTitle:@"Alert!"
                                                         message:@"Please choose one of the buttons"
                                               cancelButtonTitle:@"Cancel"
                                               firstButtonTittle:@"1"
                                              secondButtonTittle:@"2"
                                               thirdButtonTittle:nil];
-        alert.actionBlock = ^(NSInteger buttonIndex) {
+        
+        [alert setAction:^(NSInteger buttonIndex) {
             self.label.text = [NSString stringWithFormat:@"You has Choosed button %ld", buttonIndex];
-        };
+
+        }];
         [alert show];
-    };
+
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

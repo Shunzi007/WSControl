@@ -45,8 +45,8 @@
 }
 
 - (void)action:(WSButton *)sender {
-    if (sender.actionBlock) {
-        sender.actionBlock();
+    if (sender.action) {
+        sender.action();
     }
 }
 

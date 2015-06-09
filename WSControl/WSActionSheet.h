@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef void(^ActionSheetAcrionBlock)(NSInteger buttonIndex);
-
 @interface WSActionSheet : UIActionSheet<UIActionSheetDelegate>
 
 - (instancetype)initWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle firstButtonTittle:(NSString *)firstButtonTittle secondButtonTittle:(NSString *)secondButtonTittle thirdButtonTittle:(NSString *)thirdButtonTittle;
 
-@property (nonatomic, copy) ActionSheetAcrionBlock actionBlock;
+@property (nonatomic, copy) void (^action)(NSInteger);
+- (void)setAction:(void (^)(NSInteger buttonIndex))action;
+
+
 
 @end

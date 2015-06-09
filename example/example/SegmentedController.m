@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.segmentedControl.actionBlock = ^(NSInteger segment) {
+    [self.segmentedControl setAction:^(NSInteger segment) {
         self.label.text = [NSString stringWithFormat:@"You has choosed button %ld", segment];
-    };
+    }];
     self.segmentedControl.selectedSegmentIndex = 0;
     
     NSArray *array = [NSArray arrayWithObjects:@"0", @"1", @"2", @"3", nil];
@@ -30,7 +30,7 @@
     segmentedControl.frame = CGRectMake(16, CGRectGetMaxY(self.segmentedControl.frame) + 20, [UIScreen mainScreen].bounds.size.width - 32,  40);
     [self.view addSubview:segmentedControl];
     segmentedControl.selectedSegmentIndex = 0;
-    segmentedControl.actionBlock = self.segmentedControl.actionBlock;
+    segmentedControl.action = self.segmentedControl.action;
     
 }
 

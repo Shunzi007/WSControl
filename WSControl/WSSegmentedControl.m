@@ -27,8 +27,8 @@
 }
 
 - (void)action:(WSSegmentedControl *)sender {
-    if (sender.actionBlock) {
-        sender.actionBlock(sender.selectedSegmentIndex);
+    if (sender.action) {
+        sender.action(sender.selectedSegmentIndex);
     }
 }
 

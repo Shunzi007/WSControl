@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^AlertViewAcrionBlock)(NSInteger buttonIndex);
-
 @interface WSAlertView : UIAlertView <UIAlertViewDelegate>
-
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle firstButtonTittle:(NSString *)firstButtonTittle secondButtonTittle:(NSString *)secondButtonTittle thirdButtonTittle:(NSString *)thirdButtonTittle;
 
-@property (nonatomic, copy) AlertViewAcrionBlock actionBlock;
+@property (nonatomic, copy) void (^action)(NSInteger);
+- (void)setAction:(void (^)(NSInteger buttonIndex))action;
 
 @end

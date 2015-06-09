@@ -19,17 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.button.actionBlock = ^(){
+    [self.button setAction:^{
         self.label.text = [NSString stringWithFormat:@"number=%ld", self.number ++];
-    };
+
+    }];
     
     //
     WSButton *button = [[WSButton alloc] initWithFrame:CGRectMake(16, CGRectGetMaxY(self.button.frame) + 20.0, [[UIScreen mainScreen] bounds].size.width - 32, 30)];
     button.backgroundColor = [UIColor orangeColor];
     [button setTitle:@"WSButton" forState:UIControlStateNormal];
     [self.view addSubview:button];
-    button.actionBlock = self.button.actionBlock;
-    
+    button.action = self.button.action;
     //
     WSButton *plusButton = [WSButton buttonWithType:UIButtonTypeSystem];
     plusButton.frame = CGRectMake(16, CGRectGetMaxY(button.frame) + 20.0, [[UIScreen mainScreen] bounds].size.width - 32, 30);
@@ -37,7 +37,7 @@
     [plusButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [plusButton setTitle:@"WSButton" forState:UIControlStateNormal];
     [self.view addSubview:plusButton];
-    plusButton.actionBlock = self.button.actionBlock;
+    plusButton.action = self.button.action;
     
 }
 

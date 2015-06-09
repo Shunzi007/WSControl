@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef void(^WSWSSegmentedControlBlock)(NSInteger selectedSegmentIndex);
-
 @interface WSSegmentedControl : UISegmentedControl
 
-@property (nonatomic, copy) WSWSSegmentedControlBlock actionBlock;
+@property (nonatomic, copy) void (^action)(NSInteger);
+- (void)setAction:(void (^)(NSInteger segment))action;
 
 @end

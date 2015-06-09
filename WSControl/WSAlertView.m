@@ -22,8 +22,8 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (self.actionBlock) {
-        self.actionBlock(buttonIndex);
+    if (self.action) {
+        self.action(buttonIndex);
     }
 }
 

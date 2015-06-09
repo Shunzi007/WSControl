@@ -26,8 +26,8 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if (self.actionBlock) {
-        self.actionBlock(buttonIndex);
+    if (self.action) {
+        self.action(buttonIndex);
     }
 }
 

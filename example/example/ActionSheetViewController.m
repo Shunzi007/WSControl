@@ -21,24 +21,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.button.actionBlock = ^() {
+    self.button.action = ^() {
+            };
+    [self.button setAction:^{
         WSActionSheet *actionSheet = [[WSActionSheet alloc] initWithTitle:@"Action!"
                                                         cancelButtonTitle:@"Cancel"
                                                    destructiveButtonTitle:@"0"
                                                         firstButtonTittle:@"1"
                                                        secondButtonTittle:@"2"
                                                         thirdButtonTittle:@"3"];
-        
-        actionSheet.actionBlock = ^(NSInteger buttonIndex) {
+        [actionSheet setAction:^(NSInteger buttonIndex) {
             self.label.text = [NSString stringWithFormat:@"You has choosed button %ld", buttonIndex];
             NSString *identifier = [NSString stringWithFormat:@"show_%ld", buttonIndex];
             if (buttonIndex <= 3) {
                 [self performSegueWithIdentifier:identifier sender:[NSString stringWithFormat:@"%ld", buttonIndex]];
-
+                
             }
-        };
+
+        }];
         [actionSheet showInView:self.view];
-    };
+
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
