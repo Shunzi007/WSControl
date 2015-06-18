@@ -11,7 +11,7 @@
 
 @interface ActionSheetViewController ()
 
-@property (weak, nonatomic) IBOutlet WSButton *button;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 

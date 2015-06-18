@@ -10,7 +10,7 @@
 #import "WSControl.h"
 
 @interface ButtonViewController ()
-@property (weak, nonatomic) IBOutlet WSButton *button;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic, assign) NSInteger number;
 @end
@@ -25,13 +25,15 @@
     }];
     
     //
-    WSButton *button = [[WSButton alloc] initWithFrame:CGRectMake(16, CGRectGetMaxY(self.button.frame) + 20.0, [[UIScreen mainScreen] bounds].size.width - 32, 30)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(16, CGRectGetMaxY(self.button.frame) + 20.0, [[UIScreen mainScreen] bounds].size.width - 32, 30)];
     button.backgroundColor = [UIColor orangeColor];
     [button setTitle:@"WSButton" forState:UIControlStateNormal];
     [self.view addSubview:button];
     button.action = self.button.action;
+    
+  
     //
-    WSButton *plusButton = [WSButton buttonWithType:UIButtonTypeSystem];
+    UIButton *plusButton = [UIButton buttonWithType:UIButtonTypeSystem];
     plusButton.frame = CGRectMake(16, CGRectGetMaxY(button.frame) + 20.0, [[UIScreen mainScreen] bounds].size.width - 32, 30);
     plusButton.backgroundColor = [UIColor cyanColor];
     [plusButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

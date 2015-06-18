@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63089D231B272B44002A8F9C /* WSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63089D211B272B44002A8F9C /* WSButton.m */; };
+		636EF8C41B32A8A3006E8388 /* UIButton+ActionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 636EF8C31B32A8A3006E8388 /* UIButton+ActionBlock.m */; };
 		637FC5391B2549F40051CA62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC5381B2549F40051CA62 /* main.m */; };
 		637FC53C1B2549F40051CA62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC53B1B2549F40051CA62 /* AppDelegate.m */; };
 		637FC5421B2549F40051CA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FC5401B2549F40051CA62 /* Main.storyboard */; };
@@ -35,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63089D201B272B44002A8F9C /* WSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSButton.h; path = ../../WSControl/WSButton.h; sourceTree = "<group>"; };
-		63089D211B272B44002A8F9C /* WSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSButton.m; path = ../../WSControl/WSButton.m; sourceTree = "<group>"; };
 		63089D221B272B44002A8F9C /* WSControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSControl.h; path = ../../WSControl/WSControl.h; sourceTree = "<group>"; };
+		636EF8C21B32A8A3006E8388 /* UIButton+ActionBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ActionBlock.h"; path = "../../WSControl/UIButton+ActionBlock.h"; sourceTree = "<group>"; };
+		636EF8C31B32A8A3006E8388 /* UIButton+ActionBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ActionBlock.m"; path = "../../WSControl/UIButton+ActionBlock.m"; sourceTree = "<group>"; };
 		637FC5331B2549F40051CA62 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637FC5371B2549F40051CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637FC5381B2549F40051CA62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,14 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				63089D221B272B44002A8F9C /* WSControl.h */,
-				63089D201B272B44002A8F9C /* WSButton.h */,
-				63089D211B272B44002A8F9C /* WSButton.m */,
 				637FC5631B256C1B0051CA62 /* WSAlertView.h */,
 				637FC5641B256C1B0051CA62 /* WSAlertView.m */,
 				637FC5661B256C370051CA62 /* WSActionSheet.h */,
 				637FC5671B256C370051CA62 /* WSActionSheet.m */,
 				63FB14F91B25CC7800345755 /* WSSegmentedControl.h */,
 				63FB14FA1B25CC7800345755 /* WSSegmentedControl.m */,
+				636EF8C21B32A8A3006E8388 /* UIButton+ActionBlock.h */,
+				636EF8C31B32A8A3006E8388 /* UIButton+ActionBlock.m */,
 			);
 			name = WSControl;
 			sourceTree = "<group>";
@@ -280,11 +280,11 @@
 				637FC5651B256C1B0051CA62 /* WSAlertView.m in Sources */,
 				637FC5681B256C370051CA62 /* WSActionSheet.m in Sources */,
 				637FC56C1B256EC20051CA62 /* ButtonViewController.m in Sources */,
+				636EF8C41B32A8A3006E8388 /* UIButton+ActionBlock.m in Sources */,
 				637FC53C1B2549F40051CA62 /* AppDelegate.m in Sources */,
 				637FC5391B2549F40051CA62 /* main.m in Sources */,
 				637FC5761B2592E10051CA62 /* RootViewController.m in Sources */,
 				63FB14FE1B25D0BB00345755 /* SegmentedController.m in Sources */,
-				63089D231B272B44002A8F9C /* WSButton.m in Sources */,
 				637FC56F1B256ECE0051CA62 /* AlertViewController.m in Sources */,
 				63FB14FB1B25CC7800345755 /* WSSegmentedControl.m in Sources */,
 				637FC5721B256EDA0051CA62 /* ActionSheetViewController.m in Sources */,
