@@ -24,12 +24,11 @@
     self.button.action = ^() {
             };
     [self.button setAction:^{
-        WSActionSheet *actionSheet = [[WSActionSheet alloc] initWithTitle:@"Action!"
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Action!"
+                                                                 delegate:nil
                                                         cancelButtonTitle:@"Cancel"
                                                    destructiveButtonTitle:@"0"
-                                                        firstButtonTittle:@"1"
-                                                       secondButtonTittle:@"2"
-                                                        thirdButtonTittle:@"3"];
+                                                        otherButtonTitles:@"1", @"2", @"3", nil];
         [actionSheet setAction:^(NSInteger buttonIndex) {
             self.label.text = [NSString stringWithFormat:@"You has choosed button %ld", buttonIndex];
             NSString *identifier = [NSString stringWithFormat:@"show_%ld", buttonIndex];

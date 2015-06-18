@@ -9,9 +9,9 @@
 #ifndef example_WSControl_h
 #define example_WSControl_h
 
-#import "WSActionSheet.h"
 #import "WSSegmentedControl.h"
 #import "UIButton+ActionBlock.h"
 #import "UIAlertView+ActionBlock.h"
+#import "UIActionSheet+ActionBlock.h"
 
 #endif
