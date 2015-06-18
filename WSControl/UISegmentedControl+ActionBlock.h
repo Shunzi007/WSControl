@@ -10,4 +10,7 @@
 
 @interface UISegmentedControl (ActionBlock)
 
+@property (nonatomic, copy) void (^action)(NSInteger);
+- (void)setAction:(void (^)(NSInteger segment))action;
+
 @end

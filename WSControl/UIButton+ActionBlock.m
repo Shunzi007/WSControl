@@ -29,7 +29,7 @@ static void *actionKey = &actionKey;
 }
 
 - (void (^)(void))action {
-    void (^act)(void) = objc_getAssociatedObject(self, actionKey);
+    id act = objc_getAssociatedObject(self, actionKey);
     return act;
 }
 

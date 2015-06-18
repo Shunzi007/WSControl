@@ -10,7 +10,7 @@
 #import "WSControl.h"
 
 @interface SegmentedController ()
-@property (weak, nonatomic) IBOutlet WSSegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
@@ -26,7 +26,7 @@
     self.segmentedControl.selectedSegmentIndex = 0;
     
     NSArray *array = [NSArray arrayWithObjects:@"0", @"1", @"2", @"3", nil];
-    WSSegmentedControl *segmentedControl = [[WSSegmentedControl alloc]initWithItems:array];
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:array];
     segmentedControl.frame = CGRectMake(16, CGRectGetMaxY(self.segmentedControl.frame) + 20, [UIScreen mainScreen].bounds.size.width - 32,  40);
     [self.view addSubview:segmentedControl];
     segmentedControl.selectedSegmentIndex = 0;
