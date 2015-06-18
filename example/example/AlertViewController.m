@@ -21,12 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.button setAction:^{
-        WSAlertView *alert = [[WSAlertView alloc] initWithTitle:@"Alert!"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert!"
                                                         message:@"Please choose one of the buttons"
+                                                       delegate:self
                                               cancelButtonTitle:@"Cancel"
-                                              firstButtonTittle:@"1"
-                                             secondButtonTittle:@"2"
-                                              thirdButtonTittle:nil];
+                                              otherButtonTitles:@"1", @"2", @"3", @"4", nil];
+        
         
         [alert setAction:^(NSInteger buttonIndex) {
             self.label.text = [NSString stringWithFormat:@"You has Choosed button %ld", buttonIndex];

@@ -13,5 +13,6 @@
 #import "WSActionSheet.h"
 #import "WSSegmentedControl.h"
 #import "UIButton+ActionBlock.h"
+#import "UIAlertView+ActionBlock.h"
 
 #endif
