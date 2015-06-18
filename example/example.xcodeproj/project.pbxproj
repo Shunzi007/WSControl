@@ -21,7 +21,6 @@
 		637FC56F1B256ECE0051CA62 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC56E1B256ECE0051CA62 /* AlertViewController.m */; };
 		637FC5721B256EDA0051CA62 /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC5711B256EDA0051CA62 /* ActionSheetViewController.m */; };
 		637FC5761B2592E10051CA62 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FC5751B2592E10051CA62 /* RootViewController.m */; };
-		63FB14FB1B25CC7800345755 /* WSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FB14FA1B25CC7800345755 /* WSSegmentedControl.m */; };
 		63FB14FE1B25D0BB00345755 /* SegmentedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FB14FD1B25D0BB00345755 /* SegmentedController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +63,6 @@
 		637FC5711B256EDA0051CA62 /* ActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetViewController.m; sourceTree = "<group>"; };
 		637FC5741B2592E10051CA62 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		637FC5751B2592E10051CA62 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		63FB14F91B25CC7800345755 /* WSSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSSegmentedControl.h; path = ../../../../Desktop/WSControl/WSControl/WSSegmentedControl.h; sourceTree = "<group>"; };
-		63FB14FA1B25CC7800345755 /* WSSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSSegmentedControl.m; path = ../../../../Desktop/WSControl/WSControl/WSSegmentedControl.m; sourceTree = "<group>"; };
 		63FB14FC1B25D0BB00345755 /* SegmentedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentedController.h; path = ../../../../Desktop/WSControl/example/example/SegmentedController.h; sourceTree = "<group>"; };
 		63FB14FD1B25D0BB00345755 /* SegmentedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentedController.m; path = ../../../../Desktop/WSControl/example/example/SegmentedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,8 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				63089D221B272B44002A8F9C /* WSControl.h */,
-				63FB14F91B25CC7800345755 /* WSSegmentedControl.h */,
-				63FB14FA1B25CC7800345755 /* WSSegmentedControl.m */,
 				636EF8C21B32A8A3006E8388 /* UIButton+ActionBlock.h */,
 				636EF8C31B32A8A3006E8388 /* UIButton+ActionBlock.m */,
 				634D10091B32B3F700F978AB /* UIAlertView+ActionBlock.h */,
@@ -291,7 +286,6 @@
 				637FC5761B2592E10051CA62 /* RootViewController.m in Sources */,
 				63FB14FE1B25D0BB00345755 /* SegmentedController.m in Sources */,
 				637FC56F1B256ECE0051CA62 /* AlertViewController.m in Sources */,
-				63FB14FB1B25CC7800345755 /* WSSegmentedControl.m in Sources */,
 				637FC5721B256EDA0051CA62 /* ActionSheetViewController.m in Sources */,
 				634D100E1B32B7B100F978AB /* UIActionSheet+ActionBlock.m in Sources */,
 			);
