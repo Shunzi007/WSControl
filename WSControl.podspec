@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WSControl"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "Encapsulated UIButton/UIAlertView/UIActionSheet/UISegmentedControl with Block."
 
   s.homepage     = "https://github.com/Shunzi007/WSControl"
